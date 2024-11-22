@@ -1,0 +1,43 @@
+ <!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="logo.ico">
+    <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: '39130dfe191438672b03e234b0286227'// 密钥
+        }
+    </script>
+<!--     高德地图API-->
+    <script src="https://webapi.amap.com/maps?v=2.0&key=b35a461fe14f60a8cd0ab6a9e2434284"></script>
+    <title>地图</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div id="search-panel">
+        <input id="search" type="text">
+    </div>
+    <button id="toggleTraffic">显示交通图层</button>
+    <button id="toggleSatellite">显示卫星地图</button>
+    <div id="bottom">
+        <div id="map">地图</div>
+        <div id="service">服务</div>
+
+        <div id="login">登录</div>
+    </div>
+    <div id="service-container"></div>
+    <div id="login-container"></div>
+</body>
+
+</html>

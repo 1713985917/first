@@ -1,0 +1,217 @@
+
+/* 移除链接的下划线样式 */
+a {
+    text-decoration: none;
+}
+
+/* 设置HTML文档的默认字体大小 */
+html {
+    font-size: 50px;
+}
+
+/* 响应式设计：根据屏幕宽度调整字体大小 */
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 21.33333333px;
+    }
+}
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 25.6px;
+    }
+}
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 26.66666667px;
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 27.6px;
+    }
+}
+@media screen and (min-width: 424px) {
+    html {
+        font-size: 28.26666667px;
+    }
+}
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 540px) {
+    html {
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 720px) {
+    html {
+        font-size: 48px;
+    }
+}
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+/* 设置body元素的样式 */
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+/* 设置容器的定位方式 */
+#container {
+    position: relative;
+}
+
+/* 确保HTML、body和容器占满整个视口 */
+html,
+body,
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 交通状态切换按钮样式 */
+#toggleTraffic {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0.5rem;
+    font-size: 0.5rem;
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 卫星图切换按钮样式 */
+#toggleSatellite {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 4.5rem;
+    font-size: 0.5rem;
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 隐藏高德地图的logo */
+.amap-logo {
+    bottom: -999px;!important;
+}
+
+/* 隐藏高德地图的版权信息 */
+.amap-copyright {
+    bottom: -999px;!important;
+}
+
+/* 调整定位按钮的位置 */
+.amap-geolocation {
+    top: 50%;
+}
+.amap-scalecontrol {
+    background: none;
+    top:80%;
+}
+.amap-toolbar {
+    background: none;
+    border:none;
+    box-shadow:none;
+    top:80%;
+}
+/*搜索框*/
+#search-panel{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 搜索输入框的样式 */
+#search-panel #search{
+    display: inline-block;
+    float: left;
+    height: 5vh;
+    width: 50vw;
+    color: #000000;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+}
+/*底部导航栏*/
+#bottom {
+    z-index: 999;
+    display:flex;
+    justify-content:space-between;
+    position: absolute;
+    bottom: 0;
+    float:left;
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+    background-color:white;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    font-size:0.8rem;
+    line-height:1.6rem;
+    text-align:center;
+}
+#bottom #map{
+    float:left;
+    color:orange;
+}
+#bottom #service{
+    float:left;
+}
+#bottom #login{
+    float:left;
+}
+#service-container{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+    width:100%;
+    height:100%;
+    background-color:white;
+
+}
+#login-container{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+    width:100%;
+    height:100%;
+    background-color:white;
+
+}
